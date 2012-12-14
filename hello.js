@@ -10,5 +10,7 @@ http.createServer(function(req, res) {
             res.write(template);
             res.end();
         });
+    }else if(req.method == "POST"){
+        
     }
 }).listen(process.env.PORT);
